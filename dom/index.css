@@ -1,0 +1,74 @@
+body{
+    font-family: "Montserrat", sans-serif;
+  }
+.heading{
+    margin-top: 50px;
+    margin-left: 70px;
+    color: rgb(27, 25, 25);
+}
+
+h2 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+}
+
+.card {
+    width: 15%;
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    border-radius: 2px;
+}
+
+.card .productImagecon img{
+    width: 100%;
+}
+.card .itemdetails {
+    padding-left: 10px;
+    margin: 10px auto;
+}
+.card .itemdetails h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+  }
+
+  .card .itemdetails h4 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+    letter-spacing: -0.10px;
+}
+.card .itemdetails{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width: 400px){
+    .card{
+        width: 40% ;
+        min-width: none;
+    }
+}
